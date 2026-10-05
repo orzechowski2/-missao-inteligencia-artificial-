@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌱 Cuide do Meio Ambiente</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER / HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="animate-title">🌍 Cuide do <span>Meio Ambiente</span></h1>
+            <p class="animate-subtitle">Pequenas atitudes geram grandes transformações</p>
+            <a href="#dicas" class="btn-hero">Descubra Como Ajudar ↓</a>
+        </div>
+        <div class="folhas">
+            <span>🍃</span><span>🌿</span><span>🍃</span><span>🌱</span>
+        </div>
+    </header>
+
+    <!-- SEÇÃO DICAS -->
+    <section id="dicas" class="section">
+        <h2 class="section-title">💚 Atitudes que Transformam</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">♻️</div>
+                <h3>Recicle</h3>
+                <p>Separe lixo orgânico, plástico, papel e vidro. A reciclagem reduz até 70% do lixo nos aterros.</p>
+            </div>
+            <div class="card">
+                <div class="icon">💧</div>
+                <h3>Economize Água</h3>
+                <p>Feche a torneira ao escovar os dentes. Você pode economizar até 12 litros por dia!</p>
+            </div>
+            <div class="card">
+                <div class="icon">🌳</div>
+                <h3>Plante Árvores</h3>
+                <p>Uma árvore absorve até 22 kg de CO₂ por ano. Plante e incentive o reflorestamento.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🚲</div>
+                <h3>Mobilidade Limpa</h3>
+                <p>Use bicicleta, caminhe ou transporte público. Reduza a emissão de gases poluentes.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🔌</div>
+                <h3>Economize Energia</h3>
+                <p>Desligue aparelhos da tomada. Evite o consumo "fantasma" de energia elétrica.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🛍️</div>
+                <h3>Sacolas Reutilizáveis</h3>
+                <p>Uma sacola plástica leva 400 anos para se decompor. Use ecobags!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO INTERATIVA - CALCULADORA -->
+    <section class="section interativa">
+        <h2 class="section-title">🧮 Calculadora de Impacto Pessoal</h2>
+        <p class="subtitulo">Responda e descubra quantas árvores você pode salvar!</p>
+
+        <div class="calc-box">
+            <label>
+                🚿 Banhos por dia:
+                <input type="number" id="banhos" min="0" max="10" value="2">
+            </label>
+            <label>
+                🚗 Km de carro por dia:
+                <input type="number" id="km" min="0" max="200" value="20">
+            </label>
+            <label>
+                🔌 Horas de eletrônicos ligados:
+                <input type="number" id="horas" min="0" max="24" value="6">
+            </label>
+
+            <button onclick="calcularImpacto()" class="btn-calc">Calcular Impacto 🌍</button>
+
+            <div id="resultado" class="resultado"></div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO QUIZ -->
+    <section class="section quiz-section">
+        <h2 class="section-title">🎯 Quiz Rápido</h2>
+        <div id="quiz" class="quiz-box">
+            <!-- Preenchido pelo JS -->
+        </div>
+    </section>
+
+    <!-- SEÇÃO IMPACTO FINAL -->
+    <section class="section final-section">
+        <h2>🌟 O Planeta é Nossa Casa</h2>
+        <p class="frase-final">"Não herdamos a Terra dos nossos pais,<br> pegamos emprestada dos nossos filhos."</p>
+        <div class="contador-impacto">
+            <div class="contador-item">
+                <span class="numero" data-target="8000000">0</span>
+                <p>Toneladas de plástico nos oceanos/ano</p>
+            </div>
+            <div class="contador-item">
+                <span class="numero" data-target="1000000">0</span>
+                <p>Espécies em risco de extinção</p>
+            </div>
+            <div class="contador-item">
+                <span class="numero" data-target="15">0</span>
+                <p>Bilhões de árvores cortadas/ano</p>
+            </div>
+        </div>
+        <button class="btn-hero" onclick="compartilhar()">Compartilhe essa Ideia 🌱</button>
+    </section>
+
+    <footer>
+        <p>💚 Feito com consciência para um futuro melhor</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
